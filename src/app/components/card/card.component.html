@@ -1,0 +1,53 @@
+<section class="ticket-card py-4 px-4 position-relative">
+  <button
+    class="btn delete"
+    [pTooltip]="'ticket.delete' | translate"
+    tooltipPosition="bottom"
+  >
+    <i class="pi pi-trash p-tooltip-right text-white pointer"></i>
+  </button>
+
+  <div class="lines">
+    <img class="vectors-1" src="./assets/imgs/curves.svg" alt="curves" />
+    <img class="vectors-2" src="./assets/imgs/curves.svg" alt="curves" />
+  </div>
+
+  <div class="heading text-center text-white">
+    <h5 class="f-14">{{ "ticket.heading" | translate }}</h5>
+    <div class="link position-relative f-13 fw-500 my-3 mx-auto p-2">
+      <button
+        [pTooltip]="'ticket.copy' | translate"
+        tooltipPosition="bottom"
+        cdkCopyToClipboard="{{ ticketUrl }}"
+        class="waves-effect waves-light btn mx-1 p-0 copy"
+      >
+        <i
+          class="pi pi-clone main-color f-14"
+          style="transform: rotateX(180deg)"
+        ></i>
+      </button>
+      <span class="main-text">{{ ticketUrl }}</span>
+    </div>
+    <div class="valid-ticket f-12">
+      {{ "ticket.expired" | translate }}
+    </div>
+    <img src="./assets/imgs/dashed.svg" alt="dashed" class="dashed" />
+  </div>
+  <div class="code d-flex justify-content-between mt-5">
+    <div class="d-flex align-items-end gap-3 text">
+      <div class="discount text-white align-self-cente">
+        <span class="f-14">{{ "ticket.discount" | translate }}</span> <br />
+        25%
+      </div>
+      <button
+        class="btn btn-outline-light text-white f-13 share-btn align-self-en"
+      >
+        <i class="fa-regular fa-paper-plane"></i>
+        {{ "ticket.share" | translate }}
+      </button>
+    </div>
+    <div class="qrcode">
+      <ngx-kjua [text]="ticketUrl" [size]="80"></ngx-kjua>
+    </div>
+  </div>
+</section>

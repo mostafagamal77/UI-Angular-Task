@@ -1,0 +1,21 @@
+<header class="d-flex justify-content-between align-items-center my-4">
+  <div class="ticket-number fw-500">
+    <div class="d-inline-block mx-1">
+      <button *ngIf="_ChangeLangService.isRtl.value" class="btn exit">
+        <span><i class="pi pi-arrow-right"></i></span>
+      </button>
+      <button *ngIf="!_ChangeLangService.isRtl.value" class="btn exit">
+        <span><i class="pi pi-arrow-left"></i></span>
+      </button>
+    </div>
+    <span> {{ "ticket.ticket_sub" | translate }} </span>
+    <span>#</span>
+    <span> {{ "ticket.number" | translate }} </span>
+  </div>
+  <div class="edit">
+    <button class="btn">
+      <span><img src="./assets/imgs/edit.svg" alt="edit" /></span>
+      <span class="mx-2">{{ "ticket.edit" | translate }}</span>
+    </button>
+  </div>
+</header>

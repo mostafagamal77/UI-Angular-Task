@@ -1,0 +1,188 @@
+.table {
+  background-color: #fff;
+  ::-webkit-scrollbar {
+    height: 7px;
+  }
+  .p-datatable-header {
+    background-color: #f3f5f7;
+    border-top: none;
+  }
+  .table-caption {
+    margin-bottom: 10px;
+    .search {
+      width: 277px !important;
+      height: 36px !important;
+    }
+    .icons {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      border: 0.75px solid #92a1ad66;
+      color: rgb(146, 161, 173);
+      margin: 0 8px;
+      border-radius: 6px;
+      transition: var(--main-transition);
+      transform: rotateY(180deg);
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      -webkit-transition: var(--main-transition);
+      -moz-transition: var(--main-transition);
+      -ms-transition: var(--main-transition);
+      -o-transition: var(--main-transition);
+      &:hover {
+        background-color: var(--main-color);
+        color: #fff;
+      }
+      &.setting {
+        padding: 8px;
+      }
+    }
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 18px;
+    & input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+    }
+    .slider:before {
+      content: "";
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      right: 2px;
+      top: 50%;
+      translate: 0 -50%;
+      background-color: white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+    & input:checked + .slider {
+      background-color: var(--main-color) !important;
+      &::before {
+        transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+        -moz-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        -o-transform: translateX(-15px);
+      }
+    }
+  }
+  .new-ticket:hover {
+    background-color: indigo !important;
+  }
+  .phone {
+    font-size: 9.96px;
+    color: #92a1ad;
+  }
+  .name {
+    font-size: 11.62px;
+  }
+  .ticket-img {
+    background-color: #8a74f91a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31.67px;
+    height: 31.67px;
+    padding: 11.22px;
+    border-radius: 7.92px;
+    -webkit-border-radius: 7.92px;
+    -moz-border-radius: 7.92px;
+    -ms-border-radius: 7.92px;
+    -o-border-radius: 7.92px;
+  }
+  .ticket-td {
+    min-width: 260px !important;
+    .subtitle {
+      font-family: "Inter", sans-serif;
+    }
+    & a {
+      transition: var(--main-transition);
+      -webkit-transition: var(--main-transition);
+      -moz-transition: var(--main-transition);
+      -ms-transition: var(--main-transition);
+      -o-transition: var(--main-transition);
+    }
+    & a:hover {
+      scale: 1.2;
+    }
+  }
+  .p-paginator-container {
+    background-color: red;
+  }
+  .p-paginator {
+    justify-content: left;
+    align-items: center !important;
+    padding: 0 !important;
+    position: relative;
+    bottom: 20px;
+    & button {
+      min-width: 27px !important;
+      height: 27px !important;
+      margin: 5px 2px;
+      border-radius: 4.5px;
+      -webkit-border-radius: 4.5px;
+      -moz-border-radius: 4.5px;
+      -ms-border-radius: 4.5px;
+      -o-border-radius: 4.5px;
+    }
+    .p-paginator-first,
+    .p-paginator-last {
+      color: transparent !important;
+      pointer-events: none;
+    }
+    .p-paginator-prev,
+    .p-paginator-next {
+      rotate: 180deg;
+    }
+    .p-highlight {
+      background-color: var(--main-color) !important;
+      color: #fff;
+      font-weight: 500;
+    }
+    .p-paginator-current {
+      position: absolute;
+      right: 0;
+    }
+    @media (max-width: 600px) {
+      .p-paginator-current {
+        top: 30px;
+        font-size: 12px;
+      }
+    }
+  }
+}

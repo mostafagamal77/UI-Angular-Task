@@ -1,0 +1,161 @@
+<section class="table mb-5 rounded-3">
+  <p-table
+    #dt
+    [value]="'products' | translate"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [paginator]="true"
+    [rows]="4"
+    [showCurrentPageReport]="true"
+    currentPageReportTemplate="{{ 'table-head.show' | translate }} {first}    {{
+      'table-head.out' | translate
+    }} {totalRecords}"
+    [globalFilterFields]="['name', 'id']"
+  >
+    <ng-template pTemplate="caption">
+      <div
+        class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center table-caption"
+      >
+        <div class="d-flex flex-column flex-sm-row align-items-center gap-3">
+          <p class="m-0 main-text fw-normal">
+            {{ "table-head.head_sub" | translate }}
+          </p>
+          <div
+            class="flex d-flex flex-column row-gap-1 flex-sm-row align-items-center"
+          >
+            <span class="p-input-icon-right ml-auto">
+              <i class="pi pi-search"></i>
+
+              <input
+                class="p-inputtext w-100 search"
+                pInputText
+                #textInput
+                type="text"
+                [placeholder]="'table-head.search' | translate"
+                (input)="dt.filterGlobal(textInput.value, 'contains')"
+              />
+            </span>
+            <button class="btn p-0 mx-auto">
+              <img
+                src="./assets/imgs/setting.svg"
+                alt="settings"
+                class="icons setting"
+              />
+            </button>
+            <button class="btn p-0 mx-auto">
+              <i class="pi pi-sort-alt icons"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center mx-4">
+            <label class="switch mx-2">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+            <span class="text-gray fw-lighter">
+              {{ "table-head.toggle" | translate }}
+            </span>
+          </div>
+          <button class="btn text-white main-bg rounded-2 f-12 new-ticket">
+            {{ "table-head.new_ticket_btn" | translate }}
+          </button>
+        </div>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate="header">
+      <tr class="text-center">
+        <th class="text-gray fw-normal">{{ "table-head.id" | translate }}</th>
+        <th class="text-gray fw-normal">{{ "table-head.user" | translate }}</th>
+        <th class="text-gray fw-normal">
+          {{ "table-head.ticket_number" | translate }}
+        </th>
+
+        <th
+          class="text-gray fw-normal"
+          pSortableColumn="price"
+          style="width: 20%"
+        >
+          {{ "table-head.price" | translate }}
+          <p-sortIcon field="price"></p-sortIcon>
+        </th>
+        <th class="text-gray fw-normal">
+          {{ "table-head.cinema" | translate }}
+        </th>
+        <th class="text-gray fw-normal">
+          {{ "table-head.people" | translate }}
+        </th>
+        <th class="text-gray fw-normal">
+          {{ "table-head.purchases" | translate }}
+        </th>
+        <th class="text-gray fw-normal">
+          {{ "table-head.ticket" | translate }}
+        </th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product class="table-body">
+      <tr class="border-bottom main-text">
+        <td class="text-center">{{ product.id }}</td>
+        <td class="d-flex justify-content-betwee align-items-center">
+          <img
+            class="rounded-5 mx-1"
+            [alt]="product.name"
+            [src]="
+              product.img_path
+                ? product.img_path
+                : 'https://pmav.eu/stuff/pictar/pictar-assets/examples/pv.png'
+            "
+            width="32"
+            style="vertical-align: middle"
+          />
+
+          <div class="p-0">
+            <span class="ml-1 vertical-align-middle name main-text">{{
+              product.name
+            }}</span>
+            <br />
+            <span class="ml-1 vertical-align-middle phone">{{
+              product.phone
+            }}</span>
+          </div>
+        </td>
+        <td class="text-center">{{ product.ticket_number }}</td>
+        <td class="text-center">{{ product.price | currency }}</td>
+        <td class="text-center">
+          <span
+            class="f-13"
+            *ngFor="let cinema of product.cinema | sliceText : 0 : 4"
+            >{{ cinema }},
+          </span>
+          <span
+            [pTooltip]="(product.cinema | sliceText : 4)?.join(' , ')"
+            tooltipPosition="top"
+            *ngIf="product.cinema.length > 4"
+          >
+            ...</span
+          >
+        </td>
+        <td class="text-center">{{ product.people }}</td>
+        <td class="text-center f-13">{{ product.purchases }}</td>
+        <td class="text-center ticket-td">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="ticket-img me-2">
+              <img src="./assets/imgs/ticket-2.svg" alt="ticket" />
+            </div>
+            <div class="text d-flex flex-column align-items-start">
+              <p class="f-12 mb-0">{{ product.ticket }}</p>
+              <div class="subtitle">
+                <span class="f-10 text-gray mx-1">9mb</span> .
+                <span class="f-10 fw-500 text-gray mx-1">PDF</span>
+              </div>
+            </div>
+            <a download href="#" class="download main-color p-2">
+              <img src="./assets/imgs/download.svg" alt="download" />
+            </a>
+          </div>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</section>

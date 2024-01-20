@@ -1,0 +1,57 @@
+.chart {
+  background-color: #fff;
+  border-radius: 8px;
+  max-height: 315px;
+  overflow: hidden;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  .chart-canvas {
+    height: 300px;
+  }
+  @media (max-width: 767px) {
+    .chart-canvas {
+      width: 115%;
+      translate: -20px -40px;
+      &.ar {
+        translate: 30px -40px;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .chart-canvas {
+      width: 120%;
+      translate: -50px -40px;
+      &.ar {
+        translate: 50px -40px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .chart-canvas {
+      width: 120%;
+      translate: -70px -40px;
+      &.ar {
+        translate: 75px -40px;
+      }
+    }
+  }
+  @media (min-width: 1300px) {
+    .chart-canvas {
+      width: 124%;
+      translate: -130px -40px;
+      &.ar {
+        translate: 128px -40px;
+      }
+    }
+  }
+  .period {
+    color: #99a1b7;
+  }
+  #options {
+    background-color: #e8e8e87b;
+    border: 1px solid #e8e8e8;
+    outline: none;
+  }
+}

@@ -1,0 +1,405 @@
+{
+  "chart": {
+    "headText": "Coupon usage statistics",
+    "headSub": "05 Jul, 2023 - 05 Aug, 2023",
+    "yearOption": "year",
+    "monthOption": "month"
+  },
+  "ticket": {
+    "ticket_sub": "Ticket number",
+    "number": "2342",
+    "edit": "edit",
+    "heading": "Display the ticket for the movie",
+    "expired": "Valid until July 15, 2023",
+    "discount": "Discount",
+    "share": "Share",
+    "delete": "Delete",
+    "copy": "copy"
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "img_path_def": "https://pmav.eu/stuff/pictar/pictar-assets/examples/pv.png",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 2,
+      "name": "Mohamed Ahmed",
+      "phone": "0123456789",
+      "img_path": "https://mighty.tools/mockmind-api/content/human/57.jpg",
+      "ticket_number": "C-102",
+      "price": 30,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 3,
+      "name": "Mohamed Elghareb",
+      "phone": "0123456789",
+      "img_path": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "ticket_number": "C-101",
+      "price": 45,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 4,
+      "name": "Ahmed Mahmoud",
+      "phone": "0123456789",
+      "ticket_number": "C-103",
+      "price": 54,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 5,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "img_path": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "ticket_number": "C-104",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 6,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 7,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 8,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "img_path": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 9,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 10,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 11,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 12,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 13,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "img_path": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 14,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 15,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "img_path": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 16,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 17,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 34,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 18,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 60,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 19,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "img_path": "https://mighty.tools/mockmind-api/content/human/65.jpg",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    },
+    {
+      "id": 20,
+      "name": "Ahmed Mohamed",
+      "phone": "0123456789",
+      "ticket_number": "C-101",
+      "price": 40,
+      "cinema": [
+        "Misr Cinema",
+        "Arab Mall",
+        "ِAtnaan Building tower",
+        "ٍSraya Elqoba",
+        "Sydnawi Mall",
+        "Borg ElAraab"
+      ],
+      "people": 1,
+      "purchases": "one",
+      "ticket": "ticket number 45.pdf"
+    }
+  ],
+  "table-head": {
+    "id": "#",
+    "user": "user",
+    "ticket_number": "ticket number",
+    "price": "price",
+    "cinema": "cinema",
+    "people": "people",
+    "purchases": "purchases",
+    "ticket": "ticket",
+    "search": " Search Keyword",
+    "head_sub": "Ticket sales",
+    "new_ticket_btn": "Book a new ticket",
+    "toggle": "Activated",
+    "show": "Showing",
+    "out": "out of"
+  }
+}

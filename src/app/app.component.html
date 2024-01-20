@@ -1,0 +1,38 @@
+<div class="local-btns">
+  <button
+    *ngIf="!_ChangeLangService.isRtl.value"
+    (click)="arLang('ar')"
+    data-lang=""
+    class="btn language fw-bold fs-5"
+  >
+    <i class="fa-solid fa-globe"></i>
+    <span class="mx-1 text-uppercase">AR</span>
+  </button>
+  <button
+    *ngIf="_ChangeLangService.isRtl.value"
+    (click)="enLang('en')"
+    data-lang=""
+    class="btn language fw-bold fs-5"
+  >
+    <i class="fa-solid fa-globe"></i>
+    <span class="mx-1 text-uppercase">EN</span>
+  </button>
+</div>
+
+<div
+  [dir]="_ChangeLangService.isRtl.value ? 'rtl' : 'ltr'"
+  [style.font-family]="_ChangeLangService.isRtl.value ? 'ar_font' : ''"
+>
+  <div class="container-fluid">
+    <app-header></app-header>
+    <div class="row mb-4 gap-3 gap-md-0">
+      <div class="col-md-8 col-xl-9">
+        <app-chart></app-chart>
+      </div>
+      <div class="col-md-4 col-xl-3">
+        <app-card></app-card>
+      </div>
+    </div>
+    <app-table></app-table>
+  </div>
+</div>
